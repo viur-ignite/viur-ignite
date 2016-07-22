@@ -1,0 +1,23 @@
+{
+	"name": "viur-ignite",
+	"version": "1.0.0",
+	"description": "VIUR Ignite basic project",
+	"main": "",
+	"scripts": {
+		"test": "\"echo Hello world\""
+	},
+	"repository": {},
+	"keywords": [],
+	"author": "VIUR",
+	"license": "GPL-3.0",
+	"bugs": {},
+	"homepage": "",
+	"dependencies": {
+		"gulp": "latest",
+		"viur-ignite-css": "latest",
+		"viur-ignite-js": "latest",
+		"viur-ignite-icons": "latest",
+		"viur-ignite-html": "latest",
+		"viur-ignite-compressor": "latest"
+	}
+}

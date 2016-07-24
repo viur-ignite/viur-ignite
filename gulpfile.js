@@ -32,7 +32,7 @@ gulp.task('icons', function () {
 	return VIUR.icons.build()
 });
 
-// çompression
+// compression
 gulp.task('compress', function () {
 	return VIUR.compressor.build({
 		index: "./sources/html/_layout.html",
@@ -48,9 +48,9 @@ gulp.task('html', function () {
 // create source folder with prototype app.js
 // create source folder with icons
 gulp.task('init', function () {
-	VIUR.css.init();
-	VIUR.js.init();
-	VIUR.icons.init();
+	//VIUR.css.init();
+	//VIUR.js.init();
+	VIUR.icons.init({overwrite:true});
 });
 
 // watch tasks

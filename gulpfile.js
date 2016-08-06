@@ -1,7 +1,7 @@
 // Variables and requirements
 
-var gulp = require('gulp');
-var VIUR = {
+const gulp = require('gulp');
+const VIUR = {
 	css: require('viur-ignite-css'),
 	js: require('viur-ignite-js'),
 	icons: require('viur-ignite-icons'),
@@ -22,7 +22,7 @@ gulp.task('css', function () {
 	return VIUR.css.build()
 });
 
-// compilation of JS
+// compress JS
 gulp.task('js', function () {
 	return VIUR.js.build()
 });
@@ -32,7 +32,8 @@ gulp.task('icons', function () {
 	return VIUR.icons.build()
 });
 
-// compression
+// compression of images/icons/meta and
+// writing meta tags in head of your index file
 gulp.task('compress', function () {
 	return VIUR.compressor.build({
 		index: "./sources/html/_layout.html",
@@ -48,9 +49,9 @@ gulp.task('html', function () {
 // create source folder with prototype app.js
 // create source folder with icons
 gulp.task('init', function () {
-	//VIUR.css.init();
-	//VIUR.js.init();
-	VIUR.icons.init({overwrite:true});
+	VIUR.css.init();
+	VIUR.js.init();
+	VIUR.icons.init();
 });
 
 // watch tasks

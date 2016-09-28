@@ -10,7 +10,7 @@ Clone this repository
 ```
 $ git clone git@github.com:viur-ignite/viur-ignite.git
 ```
-Change into the viur-css root directory:
+Change into the ViUR ignite root directory:
 ```
 $ cd <viur-ignite root>
 ````

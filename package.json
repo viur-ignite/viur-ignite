@@ -4,7 +4,9 @@
 	"description": "VIUR Ignite basic project",
 	"main": "",
 	"scripts": {
-		"test": "\"echo Hello world\""
+		"install": "npm install gulp -g && npm install",
+		"setup": "npm run install && gulp init",
+		"test": "npm run setup"
 	},
 	"repository": {},
 	"keywords": [],

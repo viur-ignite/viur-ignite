@@ -1,8 +1,9 @@
 # VIUR Ignite Basic Project
 
->The ViUR Ignite Framework is the first attempt in building a sturdy foundation for ViUR products and Mausbrand projects.<br>This CSS toolkit is the very core of ViUR Ignite. It is built upon the principles of many CSS guides and frameworks.
+>The ViUR Ignite Framework is the first attempt in building a sturdy foundation for ViUR products and Mausbrand projects.
 
 Use this to build your own VIUR Ignite Project.
+
 For a detailed introduction and examples have a look at [http://ignite.viur.is](http://ignite.viur.is).
 
 ## Install
@@ -14,19 +15,14 @@ Change into the ViUR ignite root directory:
 ```
 $ cd <viur-ignite root>
 ````
-Install gulp and all dependencies:
-
+Install gulp global and all dependencies local and initial the project:
 ```
-$ npm install
-```
-Initial the project with:
-```
-$ gulp init
+$ npm run setup
 ```
 
 ## Build your project
-###Your Workspace ist /sources/
-* HTML: Write the site in _layout.html and fill html-files in sources/html with cool content. New sites must be added in the _sites.json
+### Your Workspace ist /sources/
+* HTML: Write the site in _layout.html and fill html-files in sources/html with cool content. New sites must be added in the _menu.json
 * LESS: Add a less-file in sources/less and create your own elements or customize your project in the app.less and appconf.less
 * JavaScript: Look at the previous point! ... You tried it with Pure CSS? OKAY, add your scripts in sources/less/app.js
 * Icons: Add your own icons in sources/icons
